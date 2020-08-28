@@ -12,7 +12,7 @@ def sha256(filepath):
     return digest.hexdigest()
 
 
-parser_description = "Checks if submission report dependant documents exists and matches the supplied digest"
+parser_description = "Checks if submission report's dependant documents exist and match the supplied digests"
 parser = argparse.ArgumentParser(description=parser_description)
 parser.add_argument("-r", "--report", help="submission report file location (ends with .xml)")
 parser.add_argument("-c", "--content", help="content folder location (contains all the files for this offer)")
